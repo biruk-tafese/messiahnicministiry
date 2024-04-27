@@ -71,13 +71,12 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
-   
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-# The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# The URL to use when referring to static files (where they will be served from)
-STATIC_URL = '/static/'
-
+# SESSION_COOKIE_DOMAIN = 'your_session_cookie_domain'
+# CSRF_COOKIE_DOMAIN = 'your_csrf_cookie_domain'
+# CSRF_TRUSTED_ORIGINS = ['your_trusted_origin']
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_REGEX_WHITELIST = ['your_origin_regex']
+# CORS_ALLOW_CREDENTIALS
+# CORS_ORIGIN_REGEX_WHITELIST
